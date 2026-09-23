@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0177)file:///C:/Users/offic/Desktop/HK%E6%88%B7%E5%A4%96%E6%90%9C/%E9%A6%99%E6%B8%AF%E6%88%B7%E5%A4%96%E5%95%86%E5%BA%97%E6%90%9C%E7%B4%A2%20%C2%B7%20%E6%9C%AC%E5%9C%B0%E7%89%88.html -->
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>香港户外商店搜索 · 在线版</title>
 <style>
@@ -48,7 +48,6 @@
     border:1px solid rgba(46,91,67,0.25);padding:3px 10px;border-radius:999px;white-space:nowrap;
   }
 
-
   /* 实时汇率工具 */
   .fx-widget{
     width:100%;box-sizing:border-box;flex:0 0 auto;background:var(--card);border:1px solid var(--line);
@@ -68,7 +67,6 @@
   .fx-swap:hover{border-color:var(--moss);background:rgba(122,155,131,0.08);}
   .fx-rate{font-size:10.5px;color:var(--ink-soft);margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .fx-result{font-size:11.5px;color:var(--pine-deep);font-weight:600;margin-top:2px;min-height:17px;}
-  .fx-loading{opacity:.62;}
   @media (max-width:900px){
     .fx-widget{width:100%;max-width:none;}
     .badge-local{position:static;margin-left:auto;}
@@ -79,9 +77,7 @@
     padding:18px;box-shadow:var(--shadow);margin-bottom:22px;
   }
   .search-row{display:flex;gap:10px;flex-wrap:wrap;}
-  .search-input-wrap{
-    position:relative;flex:1 1 260px;min-width:0;
-  }
+  .search-input-wrap{position:relative;flex:1 1 260px;min-width:0;}
   .search-input{
     width:100%;height:50px;border:1.5px solid var(--line);border-radius:10px;
     padding:0 16px;font-size:16px;color:var(--ink);background:#fff;outline:none;
@@ -115,12 +111,7 @@
     white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
   }
   .history-dropdown .history-kw:hover{color:var(--signal-deep);}
-  .history-dropdown .history-meta{
-    flex:0 0 auto;font-size:11px;color:var(--ink-soft);white-space:nowrap;
-  }
-  .history-dropdown .icon-btn{width:28px;height:28px;border-radius:7px;flex:0 0 auto;}
-  .history-dropdown .empty{padding:14px 12px;font-size:12px;}
-  .history-dropdown .text-btn{font-size:11.5px;}
+  .history-dropdown .history-meta{flex:0 0 auto;font-size:11px;color:var(--ink-soft);white-space:nowrap;}
   .btn{
     height:50px;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;
     display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -132,8 +123,6 @@
   .btn-ghost{background:transparent;color:var(--pine-deep);border:1.5px solid var(--pine);height:50px;}
   .btn-ghost:hover{background:rgba(46,91,67,0.07);}
   .btn-small{height:36px;padding:0 14px;font-size:13px;border-radius:8px;}
-  .btn-danger-ghost{background:transparent;color:var(--danger);border:1.5px solid rgba(196,72,63,0.5);}
-  .btn-danger-ghost:hover{background:rgba(196,72,63,0.07);}
   .search-hint{font-size:12px;color:var(--ink-soft);margin-top:10px;}
   .search-status{font-size:12.5px;margin-top:10px;display:none;}
   .search-status.show{display:flex;align-items:center;gap:8px;}
@@ -214,22 +203,12 @@
     transition:background .15s ease;
   }
   .result-open:hover{background:var(--signal-deep);}
-  .result-tag{
-    font-size:10.5px;padding:1px 7px;border-radius:999px;font-weight:500;
-  }
+  .result-tag{font-size:10.5px;padding:1px 7px;border-radius:999px;font-weight:500;}
   .tag-yes{background:rgba(62,124,79,0.13);color:var(--ok);border:1px solid rgba(62,124,79,0.3);}
   .tag-unknown{background:rgba(169,116,27,0.12);color:var(--warn);border:1px solid rgba(169,116,27,0.32);}
   .tag-no{background:rgba(90,102,95,0.1);color:var(--ink-soft);border:1px solid rgba(90,102,95,0.25);}
 
   /* 历史列表 */
-  .history-list{display:flex;flex-direction:column;}
-  .history-item{
-    display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);
-  }
-  .history-item:last-child{border-bottom:none;}
-  .history-kw{flex:1 1 auto;min-width:0;font-size:14px;font-weight:600;cursor:pointer;}
-  .history-kw:hover{color:var(--signal-deep);}
-  .history-meta{font-size:11.5px;color:var(--ink-soft);}
   .icon-btn{
     width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:#fff;
     cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--ink-soft);
@@ -303,9 +282,6 @@
   }
   .text-btn:hover{color:var(--signal);}
   :focus-visible{outline:2px solid var(--signal);outline-offset:2px;}
-  @media (prefers-reduced-motion: reduce){
-    *{transition:none !important;animation:none !important;}
-  }
 </style>
 </head>
 <body>
@@ -334,8 +310,6 @@
       </div>
     </div>
     <span class="badge-local" style="color:var(--signal-deep);background:rgba(224,118,59,0.1);border-color:rgba(224,118,59,0.25);">在线版 · 无需本地代理</span>
-
-
   </header>
 
   <section class="search-card" aria-label="搜索">
@@ -362,8 +336,8 @@
         添加商店
       </button>
     </div>
-    <div class="search-status" id="searchStatus"><span class="spin"></span><span id="searchStatusText">正在检测 14 家商店…</span></div>
-    <div class="search-hint">搜索后会自动访问各商店搜索结果页：检测到关键词的商店显示在主结果，没有关键词的自动过滤；无法确认的商店收进下方折叠区。无需启动本地代理，直接在浏览器使用。</div>
+    <div class="search-status" id="searchStatus"><span class="spin"></span><span id="searchStatusText">正在检测 15 家商店…</span></div>
+    <div class="search-hint">搜索后会自动访问各商店搜索结果页：检测到关键词的商店显示在主结果，没有关键词的自动过滤；无法确认的商店展示在下方。无需启动本地代理，直接在浏览器使用。</div>
   </section>
 
   <div class="layout">
@@ -377,55 +351,61 @@
           <span id="resultCount" style="font-size:12px;color:#5A665F;">输入关键词开始搜索</span>
         </div>
         <div class="panel-body">
-          <div id="results" class="results"><div class="group g-unknown"><div class="group-head">未能自动确认<span class="g-count">14</span><button class="g-toggle" type="button">收起</button></div><div class="results"><div class="result-card"><div class="result-rank">1</div><div class="result-info"><div class="result-name">Campzone<span class="store-tag">预置</span><span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://www.campzoneoutdoor.com/products?query=Coulee">https://www.campzoneoutdoor.com/products?query=Coulee</div><div class="result-note">露营用品专门店（Shopline）</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://www.campzoneoutdoor.com/products?query=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">2</div><div class="result-info"><div class="result-name">豪华<span class="store-tag">预置</span><span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://www.howa.com.hk/search/Coulee">https://www.howa.com.hk/search/Coulee</div><div class="result-note">旺角实体店 · 露营/水上/旅游用品</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://www.howa.com.hk/search/Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">3</div><div class="result-info"><div class="result-name">Overlander<span class="store-tag">预置</span><span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://www.overlander.com.hk/search?word=Coulee">https://www.overlander.com.hk/search?word=Coulee</div><div class="result-note">香港最大户外连锁</div><div class="result-reason reason-unknown" title="检测通道: direct">无法自动确认（页面动态加载或需手动查看）</div></div><a class="result-open" href="https://www.overlander.com.hk/search?word=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">4</div><div class="result-info"><div class="result-name">Funshop<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://funshopoutdoor.com.hk/search?options%5Bprefix%5D=last&amp;q=Coulee">https://funshopoutdoor.com.hk/search?options%5Bprefix%5D=last&amp;q=Coulee</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://funshopoutdoor.com.hk/search?options%5Bprefix%5D=last&amp;q=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">5</div><div class="result-info"><div class="result-name">自然乐<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://campingshare.com.hk/category?keyword=Coulee">https://campingshare.com.hk/category?keyword=Coulee</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://campingshare.com.hk/category?keyword=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">6</div><div class="result-info"><div class="result-name">Wildholics<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://wildholics.com/search?type=product&amp;options%5Bprefix%5D=last&amp;options%5Bunavailable_products%5D=last&amp;q=Coulee">https://wildholics.com/search?type=product&amp;options%5Bprefix%5D=last&amp;options%5Bunavailable_products%5D=last&amp;q=Coulee</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://wildholics.com/search?type=product&amp;options%5Bprefix%5D=last&amp;options%5Bunavailable_products%5D=last&amp;q=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">7</div><div class="result-info"><div class="result-name">速野<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://yuenyewh.com/search?resources%5Blimit_scope%5D=each&amp;resources%5Boptions%5D%5Bfields%5D=title%2Cbody%2Ctag%2Cproduct_type%2Cvariants.title%2Cvendor%2Cvariants.sku&amp;q=Coulee">https://yuenyewh.com/search?resources%5Blimit_scope%5D=each&amp;resources%5Boptions%5D%5Bfields%5D=title%2Cbody%2Ctag%2Cproduct_type%2Cvariants.title%2Cvendor%2Cvariants.sku&amp;q=Coulee</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://yuenyewh.com/search?resources%5Blimit_scope%5D=each&amp;resources%5Boptions%5D%5Bfields%5D=title%2Cbody%2Ctag%2Cproduct_type%2Cvariants.title%2Cvendor%2Cvariants.sku&amp;q=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">8</div><div class="result-info"><div class="result-name">山川<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://hillrilloutdoor.com/search?q=Coulee">https://hillrilloutdoor.com/search?q=Coulee</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://hillrilloutdoor.com/search?q=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">9</div><div class="result-info"><div class="result-name">BackNature<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://www.backnature.hk/search?q=Coulee&amp;options%5Bprefix%5D=last">https://www.backnature.hk/search?q=Coulee&amp;options%5Bprefix%5D=last</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://www.backnature.hk/search?q=Coulee&amp;options%5Bprefix%5D=last" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">10</div><div class="result-info"><div class="result-name">小网店<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://backpackhk.com/search?q=Coulee&amp;options%5Bprefix%5D=last">https://backpackhk.com/search?q=Coulee&amp;options%5Bprefix%5D=last</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://backpackhk.com/search?q=Coulee&amp;options%5Bprefix%5D=last" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">11</div><div class="result-info"><div class="result-name">Ultra Hing<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://ultra-hing.com/en/search?q=Coulee&amp;options%5Bprefix%5D=last">https://ultra-hing.com/en/search?q=Coulee&amp;options%5Bprefix%5D=last</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://ultra-hing.com/en/search?q=Coulee&amp;options%5Bprefix%5D=last" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">12</div><div class="result-info"><div class="result-name">ACTION<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://www.actioncampinghk.com/category?keyword=Coulee">https://www.actioncampinghk.com/category?keyword=Coulee</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://www.actioncampinghk.com/category?keyword=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">13</div><div class="result-info"><div class="result-name">PlayHard<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://www.playhardhk.com/products?query=Coulee&amp;http_cookie=667de991d8a34476a1cd764eaf0ef36f">https://www.playhardhk.com/products?query=Coulee&amp;http_cookie=667de991d8a34476a1cd764eaf0ef36f</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://www.playhardhk.com/products?query=Coulee&amp;http_cookie=667de991d8a34476a1cd764eaf0ef36f" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div><div class="result-card"><div class="result-rank">14</div><div class="result-info"><div class="result-name">永高行<span class="result-tag tag-unknown">待确认</span></div><div class="result-url" title="https://www.supremeco.com.hk/products?q=Coulee">https://www.supremeco.com.hk/products?q=Coulee</div><div class="result-reason reason-unknown">检测失败（网络或站点拦截）</div></div><a class="result-open" href="https://www.supremeco.com.hk/products?q=Coulee" target="_blank" rel="noopener noreferrer">打开搜索 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="M10 14L21 3"></path></svg></a></div></div></div></div>
+          <div id="results" class="results">
+            <div class="empty">
+              <div class="empty-title">输入关键词开始搜索</div>
+              自动访问各商店搜索页判断是否匹配：匹配的优先显示，未找到的自动过滤。
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <aside>
-          <div class="fx-widget" aria-label="实时汇率转换">
-      <div class="fx-head">
-        <div class="fx-title">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M9.5 9.2c0-1.2 1.1-2 2.5-2 1.5 0 2.5.8 2.5 2 0 2.8-5 1.4-5 4.2 0 1.2 1.1 2 2.5 2 1.4 0 2.5-.8 2.5-2"></path>
-          </svg>
-          实时汇率
+      <div class="fx-widget" aria-label="实时汇率转换">
+        <div class="fx-head">
+          <div class="fx-title">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M9.5 9.2c0-1.2 1.1-2 2.5-2 1.5 0 2.5.8 2.5 2 0 2.8-5 1.4-5 4.2 0 1.2 1.1 2 2.5 2 1.4 0 2.5-.8 2.5-2"></path>
+            </svg>
+            实时汇率
+          </div>
+          <button class="fx-refresh" id="fxRefresh" type="button" title="刷新汇率">刷新</button>
         </div>
-        <button class="fx-refresh" id="fxRefresh" type="button" title="刷新汇率">刷新</button>
+        <div class="fx-row">
+          <div class="fx-field">
+            <input id="fxAmount" type="text" inputmode="decimal" value="100" aria-label="金额" autocomplete="off">
+            <select id="fxFrom" aria-label="原币种">
+              <option value="HKD" selected="">HKD</option>
+              <option value="CNY">CNY</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+          <button class="fx-swap" id="fxSwap" type="button" title="交换币种" aria-label="交换币种">⇄</button>
+          <div class="fx-field">
+            <input id="fxOutput" type="text" value="—" readonly="" aria-label="换算结果">
+            <select id="fxTo" aria-label="目标币种">
+              <option value="HKD">HKD</option>
+              <option value="CNY" selected="">CNY</option>
+              <option value="USD">USD</option>
+            </select>
+          </div>
+        </div>
+        <div class="fx-result" id="fxResult">100 HKD ≈ 85.59 CNY</div>
+        <div class="fx-rate" id="fxRate">1 HKD = 0.8559 CNY · 已更新</div>
       </div>
-      <div class="fx-row">
-        <div class="fx-field">
-          <input id="fxAmount" type="text" inputmode="decimal" value="100" aria-label="金额" autocomplete="off">
-          <select id="fxFrom" aria-label="原币种">
-            <option value="HKD" selected>HKD</option>
-            <option value="CNY">CNY</option>
-            <option value="USD">USD</option>
-          </select>
-        </div>
-        <button class="fx-swap" id="fxSwap" type="button" title="交换币种" aria-label="交换币种">⇄</button>
-        <div class="fx-field">
-          <input id="fxOutput" type="text" value="—" readonly aria-label="换算结果">
-          <select id="fxTo" aria-label="目标币种">
-            <option value="HKD">HKD</option>
-            <option value="CNY" selected>CNY</option>
-            <option value="USD">USD</option>
-          </select>
-        </div>
-      </div>
-      <div class="fx-result" id="fxResult">100 HKD ≈ — CNY</div>
-      <div class="fx-rate" id="fxRate">正在获取最新汇率…</div>
-    </div>
-      <section class="panel store-panel store-collapsed" id="storePanel">
+
+      <section class="panel store-panel" id="storePanel">
         <div class="panel-head">
           <div class="panel-title">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
             商店管理
           </div>
-          <button class="store-toggle" id="storeToggle" type="button">展开</button>
+          <button class="store-toggle" id="storeToggle" type="button">收起</button>
         </div>
-        <div class="panel-body" id="storeList"><div class="store-item"><div class="store-info"><div class="store-name">Campzone<span class="store-tag">预置</span></div><div class="store-note">露营用品专门店（Shopline）</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://www.campzoneoutdoor.com/products?query={kw}</div></div><label class="switch" title="停用 Campzone"><input type="checkbox" data-act="toggle" data-id="campzone" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="campzone" title="删除 Campzone"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">豪华<span class="store-tag">预置</span></div><div class="store-note">旺角实体店 · 露营/水上/旅游用品</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://www.howa.com.hk/search/{kw}</div></div><label class="switch" title="停用 豪华"><input type="checkbox" data-act="toggle" data-id="howa" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="howa" title="删除 豪华"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">Overlander<span class="store-tag">预置</span></div><div class="store-note">香港最大户外连锁</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://www.overlander.com.hk/search?word={kw}</div></div><label class="switch" title="停用 Overlander"><input type="checkbox" data-act="toggle" data-id="overlander" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="overlander" title="删除 Overlander"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">Funshop</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://funshopoutdoor.com.hk/search?options%5Bprefix%5D=last&amp;q={kw}</div></div><label class="switch" title="停用 Funshop"><input type="checkbox" data-act="toggle" data-id="smu9mwfujlbhyr" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9mwfujlbhyr" title="删除 Funshop"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">自然乐</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://campingshare.com.hk/category?keyword={kw}</div></div><label class="switch" title="停用 自然乐"><input type="checkbox" data-act="toggle" data-id="smu9mwytfk9i2d" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9mwytfk9i2d" title="删除 自然乐"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">Wildholics</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://wildholics.com/search?type=product&amp;options%5Bprefix%5D=last&amp;options%5Bunavailable_products%5D=last&amp;q={kw}</div></div><label class="switch" title="停用 Wildholics"><input type="checkbox" data-act="toggle" data-id="smu9mxhm3gzihj" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9mxhm3gzihj" title="删除 Wildholics"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">速野</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://yuenyewh.com/search?resources%5Blimit_scope%5D=each&amp;resources%5Boptions%5D%5Bfields%5D=title%2Cbody%2Ctag%2Cproduct_type%2Cvariants.title%2Cvendor%2Cvariants.sku&amp;q={kw}</div></div><label class="switch" title="停用 速野"><input type="checkbox" data-act="toggle" data-id="smu9mxy0b5vau2" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9mxy0b5vau2" title="删除 速野"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">山川</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://hillrilloutdoor.com/search?q={kw}</div></div><label class="switch" title="停用 山川"><input type="checkbox" data-act="toggle" data-id="smu9najh78vi0n" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9najh78vi0n" title="删除 山川"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">BackNature</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://www.backnature.hk/search?q={kw}&amp;options%5Bprefix%5D=last</div></div><label class="switch" title="停用 BackNature"><input type="checkbox" data-act="toggle" data-id="smu9ndv83hvg48" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9ndv83hvg48" title="删除 BackNature"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">小网店</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://backpackhk.com/search?q={kw}&amp;options%5Bprefix%5D=last</div></div><label class="switch" title="停用 小网店"><input type="checkbox" data-act="toggle" data-id="smu9nh8yz3dxgm" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9nh8yz3dxgm" title="删除 小网店"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">Ultra Hing</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://ultra-hing.com/en/search?q={kw}&amp;options%5Bprefix%5D=last</div></div><label class="switch" title="停用 Ultra Hing"><input type="checkbox" data-act="toggle" data-id="smu9njwju31x0p" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9njwju31x0p" title="删除 Ultra Hing"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">ACTION</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://www.actioncampinghk.com/category?keyword={kw}</div></div><label class="switch" title="停用 ACTION"><input type="checkbox" data-act="toggle" data-id="smu9nlrur0a18r" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9nlrur0a18r" title="删除 ACTION"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">PlayHard</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://www.playhardhk.com/products?query={kw}&amp;http_cookie=667de991d8a34476a1cd764eaf0ef36f</div></div><label class="switch" title="停用 PlayHard"><input type="checkbox" data-act="toggle" data-id="smu9nokebqkmbo" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9nokebqkmbo" title="删除 PlayHard"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div><div class="store-item"><div class="store-info"><div class="store-name">永高行</div><div class="store-note" style="color:#9AA29C;word-break:break-all;">https://www.supremeco.com.hk/products?q={kw}</div></div><label class="switch" title="停用 永高行"><input type="checkbox" data-act="toggle" data-id="smu9o66j7h4oxg" checked=""><span class="track"></span><span class="thumb"></span></label><button class="icon-btn" type="button" data-act="remove" data-id="smu9o66j7h4oxg" title="删除 永高行"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path></svg></button></div></div>
+        <div class="panel-body" id="storeList"></div>
         <div class="panel-foot">
-          预置 3 家可删除或停用。添加商店时，把目标网站搜索框地址栏里关键词的位置换成 <code style="font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(46,91,67,0.08);padding:0 4px;border-radius:4px;color:#234734;">{kw}</code> 即可。
+          预置 15 家可删除或停用。添加商店时，把目标网站搜索框地址栏里关键词的位置换成 <code style="font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(46,91,67,0.08);padding:0 4px;border-radius:4px;color:#234734;">{kw}</code> 即可。
         </div>
       </section>
     </aside>
@@ -445,13 +425,12 @@
     <div class="field">
       <label for="fUrl">搜索链接模板</label>
       <input type="url" id="fUrl" placeholder="https://example.com/search?q={kw}">
-      <div class="hint">用 <code>{kw}</code> 表示关键词位置。示例：淘宝为 <code>https://s.taobao.com/search?q={kw}</code>；京东为 <code>https://search.jd.com/Search?keyword={kw}</code></div>
+      <div class="hint">用 <code>{kw}</code> 表示关键词位置。</div>
       <div class="field-error" id="errUrl">链接需以 http:// 或 https:// 开头，并包含 {kw} 占位符</div>
     </div>
     <div class="field">
       <label for="fNoResult">无结果提示词（可选）</label>
-      <input type="text" id="fNoResult" placeholder="该站搜索无结果时页面显示的提示文字，如：沒有找到 / no results">
-      <div class="hint">留空则使用通用提示词表。填得越准，自动过滤越准。</div>
+      <input type="text" id="fNoResult" placeholder="无结果时提示文字">
     </div>
     <div class="field">
       <label for="fNote">备注（可选）</label>
@@ -464,29 +443,39 @@
   </div>
 </div>
 
-<div class="toast" id="toast">已添加「永高行」</div>
+<div class="toast" id="toast">提示</div>
 
 <script>
 (function(){
   "use strict";
-  var STORES_KEY = "hk_outdoor_stores_v2";
-  var HISTORY_KEY = "hk_outdoor_history_v2";
+  var STORES_KEY = "hk_outdoor_stores_v15";
+  var HISTORY_KEY = "hk_outdoor_history_v15";
   var MAX_HISTORY = 20;
 
-  /* 默认商店：直接用你配置好的 3 家（各站关键词格式不同，已按实测填写） */
+  /* 15家预置香港户外商店 */
   var DEFAULT_STORES = [
     {id:"campzone", name:"Campzone", url:"https://www.campzoneoutdoor.com/products?query={kw}", note:"露营用品专门店（Shopline）", preset:true, enabled:true, noResultWords:"抱歉"},
     {id:"howa", name:"豪华", url:"https://www.howa.com.hk/search/{kw}", note:"旺角实体店 · 露营/水上/旅游用品", preset:true, enabled:true, noResultWords:"沒有找到您要的結果"},
-    {id:"overlander", name:"Overlander", url:"https://www.overlander.com.hk/search?word={kw}", note:"香港最大户外连锁", preset:true, enabled:true, noResultWords:""}
+    {id:"overlander", name:"Overlander", url:"https://www.overlander.com.hk/search?word={kw}", note:"香港最大户外连锁", preset:true, enabled:true, noResultWords:""},
+    {id:"funshop", name:"Funshop", url:"https://funshopoutdoor.com.hk/search?options%5Bprefix%5D=last&q={kw}", note:"户外装备专门店", preset:true, enabled:true, noResultWords:""},
+    {id:"campingshare", name:"自然乐", url:"https://campingshare.com.hk/category?keyword={kw}", note:"露营装备分享", preset:true, enabled:true, noResultWords:""},
+    {id:"wildholics", name:"Wildholics", url:"https://wildholics.com/search?type=product&options%5Bprefix%5D=last&q={kw}", note:"精选露营山系装备", preset:true, enabled:true, noResultWords:""},
+    {id:"yuenyewh", name:"速野", url:"https://yuenyewh.com/search?q={kw}", note:"户外装备网店", preset:true, enabled:true, noResultWords:""},
+    {id:"hillrill", name:"山川", url:"https://hillrilloutdoor.com/search?q={kw}", note:"山川户外", preset:true, enabled:true, noResultWords:""},
+    {id:"backnature", name:"BackNature", url:"https://www.backnature.hk/search?q={kw}&options%5Bprefix%5D=last", note:"自然背囊户外", preset:true, enabled:true, noResultWords:""},
+    {id:"backpackhk", name:"小网店", url:"https://backpackhk.com/search?q={kw}&options%5Bprefix%5D=last", note:"Backpack HK", preset:true, enabled:true, noResultWords:""},
+    {id:"ultrahing", name:"Ultra Hing", url:"https://ultra-hing.com/en/search?q={kw}&options%5Bprefix%5D=last", note:"Ultra Hing 户外", preset:true, enabled:true, noResultWords:""},
+    {id:"actioncamping", name:"ACTION", url:"https://www.actioncampinghk.com/category?keyword={kw}", note:"Action Camping", preset:true, enabled:true, noResultWords:""},
+    {id:"playhard", name:"PlayHard", url:"https://www.playhardhk.com/products?query={kw}", note:"PlayHard 户外用品", preset:true, enabled:true, noResultWords:""},
+    {id:"supremeco", name:"永高行", url:"https://www.supremeco.com.hk/products?q={kw}", note:"老牌户外登山用品", preset:true, enabled:true, noResultWords:""},
+    {id:"decorumtentals", name:"山间", url:"https://www.decorumtentals.com/products?query={kw}", note:"露营租赁及零售", preset:true, enabled:true, noResultWords:""}
   ];
 
-  /* 通用无结果提示词（当商店未配置时使用） */
   var GENERIC_NO_RESULT = [
     "沒有找到您要的結果","沒有找到","没有找到","找不到","没有搜到","沒有搜到","搜尋不到","搜不到",
     "暂无商品","暫無商品","没有商品","沒有商品","没有符合","沒有符合","抱歉，找不到","抱歉, 找不到",
     "no results","no result","no products","no product","nothing found","0 items","0 results"
   ];
-  /* 真实价格信号：HK$ 前缀且非 0（Shopline 等服务端渲染价格） */
   var PRICE_RE = /(?:HK\$|HKD|HK ?D)\s?[1-9]\d{0,3}(?:,\d{3})*(?:\.\d{1,2})?/g;
 
   function uid(){ return "s" + Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
@@ -514,7 +503,6 @@
   var storeListEl = $("storeList"), historyListEl = $("historyList"), historyDropdown = $("historyDropdown");
   var searchStatus = $("searchStatus"), searchStatusText = $("searchStatusText");
 
-  /* ---------- 图标 ---------- */
   function iconExternal(){
     return '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>';
   }
@@ -522,7 +510,6 @@
     return '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M19 6l-1 14H6L5 6"/></svg>';
   }
 
-  /* ---------- URL 处理 ---------- */
   function buildUrl(tpl, kw){
     return tpl.split("{kw}").join(encodeURIComponent(kw));
   }
@@ -530,15 +517,6 @@
     return /^https?:\/\/.+/i.test(tpl) && tpl.indexOf("{kw}") !== -1;
   }
 
-  /* ---------- 在线抓取通道：无需 start_proxy.bat ---------- */
-  /*
-     浏览器不能稳定跨域读取各商店页面，所以这里不再只依赖一个公开代理。
-     策略：
-     1) Shopify 店优先尝试官方 search/suggest.json（返回商品标题/价格，体积小）；
-     2) 普通搜索页优先 Jina Reader；
-     3) 再用 AllOrigins / CorsProxy 兜底；
-     4) 多通道并发，任何一个成功且能证明关键词存在就采用。
-  */
   function fetchWithTimeout(url, ms, minLength){
     var ctrl = new AbortController(), timer = setTimeout(function(){ctrl.abort();}, ms);
     var min = (typeof minLength === "number") ? minLength : 1;
@@ -552,7 +530,7 @@
   }
   function isShopifyStore(url){
     var h=""; try{h=new URL(url).hostname.toLowerCase();}catch(e){}
-    return /funshopoutdoor|wildholics|backnature|backpackhk|ultra-hing/.test(h);
+    return /funshopoutdoor|wildholics|backnature|backpackhk|ultra-hing|campzoneoutdoor|decorumtentals/.test(h);
   }
   function buildShopifyApiCandidates(target, kw){
     if(!isShopifyStore(target)) return [];
@@ -576,7 +554,6 @@
     channels.push({name:"AllOrigins",url:"https://api.allorigins.win/raw?url="+enc,ms:9000});
     channels.push({name:"CorsProxy",url:"https://corsproxy.io/?url="+enc,ms:9000});
 
-    /* 先并发请求，避免某个失效代理拖慢整轮搜索。 */
     return Promise.all(channels.map(function(ch){
       return runChannel(ch).catch(function(e){return {ok:false,via:ch.name,error:(e&&e.message)||"fail"};});
     })).then(function(all){
@@ -590,12 +567,8 @@
     });
   }
 
-  /* ---------- 文本提取 / 关键词信号 ---------- */
   function normalizeSearchText(v){
-    return String(v || "")
-      .toLowerCase()
-      .replace(/[\u3000\s]+/g, "")
-      .replace(/[\u200B-\u200D\uFEFF]/g, "");
+    return String(v || "").toLowerCase().replace(/[\u3000\s]+/g, "").replace(/[\u200B-\u200D\uFEFF]/g, "");
   }
   function extractText(html){
     var t = html.replace(/<script[\s\S]*?<\/script>/gi, " ");
@@ -613,45 +586,36 @@
     while((m = re.exec(html))) parts.push(m[1]);
     re = /<meta[^>]+(?:name|property)=["'](?:description|og:title|og:description)["'][^>]+content=["']([\s\S]*?)["'][^>]*>/gi;
     while((m = re.exec(html))) parts.push(m[1]);
-    re = /<meta[^>]+content=["']([\s\S]*?)["'][^>]+(?:name|property)=["'](?:description|og:title|og:description)["'][^>]*>/gi;
-    while((m = re.exec(html))) parts.push(m[1]);
     return parts.join(" ");
   }
 
-  /* ---------- 结果判断 ---------- */
   function judge(html, kw, store){
     var text = extractSearchSignals(html);
     var tl = normalizeSearchText(text);
     var kl = normalizeSearchText(kw);
     var noWords = [];
     if(store.noResultWords && String(store.noResultWords).trim()){
-      noWords = String(store.noResultWords).split(/[,，、;；]/).map(function(w){ return w.trim(); }).filter(Boolean);
+      noWords = String(store.noResultWords).split(/[,[,，、;；]/).map(function(w){ return w.trim(); }).filter(Boolean);
     } else {
       noWords = GENERIC_NO_RESULT.slice();
     }
-    /* 第一关：搜索结果页必须出现搜索关键词，否则直接过滤。
-       这样不会因为页面上碰巧出现一个 HK$ 价格，就把无关商店误判为命中。 */
     if(!kl || tl.indexOf(kl) === -1){
       return {state:"no", reason:"页面未找到「" + kw + "」", via:""};
     }
-    /* 信号1：明确的无结果提示词 */
     for(var i=0;i<noWords.length;i++){
       var nw = normalizeSearchText(noWords[i]);
       if(nw && tl.indexOf(nw) !== -1){
         return {state:"no", reason:"店站提示「" + noWords[i] + "」", via:""};
       }
     }
-    /* 信号2：页面同时出现关键词与真实商品价格 */
     var prices = text.match(PRICE_RE) || [];
     var real = prices.filter(function(p){ return p.replace(/[^\d]/g,"") !== "0"; });
     if(real.length > 0){
       return {state:"yes", reason:"检测到「" + kw + "」 · 发现商品价格 " + real[0], via:""};
     }
-    /* 信号3：至少确认关键词出现在页面 */
     return {state:"yes", reason:"页面包含「" + kw + "」", via:""};
   }
 
-  /* ---------- 渲染：结果（分组） ---------- */
   function resultCard(s, url, rank, reasonHtml, tagClass, tagText){
     return '<div class="result-card">' +
       '<div class="result-rank">' + rank + '</div>' +
@@ -665,6 +629,7 @@
     '</div>';
   }
 
+  /* 核心修改点：将 collapsed 参数全部设为 false，确保所有搜索结果分组默认展开，不折叠 */
   function renderGrouped(kw, items){
     var yes = [], unknown = [], no = [];
     items.forEach(function(it){
@@ -675,7 +640,7 @@
     var html = "";
     var rank = 0;
 
-    function groupHtml(list, gClass, headText, tagClass, tagText, reasonCls, collapsed){
+    function groupHtml(list, gClass, headText, tagClass, tagText, reasonCls){
       if(list.length === 0) return "";
       var cards = "";
       list.forEach(function(it){
@@ -684,23 +649,19 @@
         var rh = {cls:reasonCls, text:it.reason, title: it.via ? "检测通道: " + it.via : ""};
         cards += resultCard(it.store, url, rank, rh, tagClass, tagText);
       });
-      return '<div class="group ' + gClass + (collapsed ? ' g-collapsed' : '') + '">' +
+      return '<div class="group ' + gClass + '">' +
         '<div class="group-head">' + headText +
         '<span class="g-count">' + list.length + '</span>' +
-        '<button class="g-toggle" type="button">' + (collapsed ? "展开" : "收起") + '</button>' +
+        '<button class="g-toggle" type="button">收起</button>' +
         '</div><div class="results">' + cards + '</div></div>';
     }
 
-    html += groupHtml(yes, "g-yes", "检测到相关商品", "tag-yes", "匹配", "reason-yes", false);
-    /* 无法确认默认折叠，不让失败结果占据主界面。 */
-    html += groupHtml(unknown, "g-unknown", "无法自动确认", "tag-unknown", "待确认", "reason-unknown", true);
-    /* 已过滤的网站保留入口，默认折叠，方便人工复核。 */
-    html += groupHtml(no, "g-no", "已过滤", "tag-no", "未找到关键词", "reason-no", true);
+    html += groupHtml(yes, "g-yes", "检测到相关商品", "tag-yes", "匹配", "reason-yes");
+    html += groupHtml(unknown, "g-unknown", "无法自动确认", "tag-unknown", "待确认", "reason-unknown");
+    html += groupHtml(no, "g-no", "已过滤", "tag-no", "未找到关键词", "reason-no");
 
     if(!html){
-      html = '<div class="empty"><div class="empty-title">没有检测到相关商店</div>' +
-        (no.length ? '所有商店的搜索结果页都未找到「' + esc(kw) + '」。' : '请先「添加商店」。') +
-        '</div>';
+      html = '<div class="empty"><div class="empty-title">没有检测到相关商店</div>请先「添加商店」。</div>';
     }
     resultsEl.innerHTML = html;
     resultCount.textContent = yes.length + " 家匹配" + (unknown.length ? " · " + unknown.length + " 待确认" : "") + (no.length ? " · " + no.length + " 已过滤" : "");
@@ -720,20 +681,16 @@
     resultCount.textContent = "";
   }
 
-  /* ---------- 搜索主流程 ---------- */
-  var searching = false;
   function doSearch(kw){
     kw=(kw||"").trim();
     if(!kw){showToast("请输入商品关键词");kwInput.focus();return;}
-    if(searching)return;
     var enabled=stores.filter(function(s){return s.enabled;});
     if(!enabled.length){resultsEl.innerHTML='<div class="empty"><div class="empty-title">还没有可用的商店</div>请先「添加商店」。</div>';resultCount.textContent="";return;}
-    searching=true;
     var btn=$("btnSearch");btn.disabled=true;searchStatus.classList.add("show");
     searchStatusText.textContent="正在检测 0/"+enabled.length+" 家商店…";renderSearching(kw);
     var items=new Array(enabled.length), nextIndex=0, active=0, completed=0;
     function finish(){
-      searching=false;btn.disabled=false;searchStatus.classList.remove("show");
+      btn.disabled=false;searchStatus.classList.remove("show");
       renderGrouped(kw,items);
       var hits=items.filter(function(i){return i&&i.state==="yes";}).length;
       history.unshift({id:uid(),kw:kw,time:Date.now(),count:enabled.length,hits:hits});
@@ -749,7 +706,6 @@
               j.via=j.via||res.via;
               return j;
             });
-            /* 任一通道能确认关键词存在即命中；只有所有成功通道都明确无结果才过滤。 */
             var hit=judged.find(function(j){return j.state==="yes";});
             if(hit){
               items[idx]={store:store,state:"yes",reason:hit.reason,via:hit.via};
@@ -758,7 +714,7 @@
               items[idx]={store:store,state:no?"no":"unknown",reason:no?no.reason:"抓取成功但无法可靠判断商品结果",via:no?no.via:(resList[0]&&resList[0].via)};
             }
           }).catch(function(e){
-            items[idx]={store:store,state:"unknown",reason:"在线抓取失败（公开通道不可用或网站拦截）"};
+            items[idx]={store:store,state:"unknown",reason:"在线抓取失败"};
           }).then(function(){
             active--;completed++;searchStatusText.textContent="正在检测 "+completed+"/"+enabled.length+" 家商店…";
             if(nextIndex<enabled.length)runNext();else if(active===0)finish();
@@ -769,7 +725,6 @@
     runNext();
   }
 
-  /* ---------- 渲染：商店管理 ---------- */
   function renderStores(){
     if(stores.length === 0){
       storeListEl.innerHTML = '<div class="empty">没有商店。点「添加商店」新增。</div>';
@@ -794,269 +749,172 @@
     storeListEl.innerHTML = html;
   }
 
-  /* ---------- 渲染：历史 ---------- */
   function renderHistory(){
     var clearBtn = $("btnClearHistory");
     if(history.length === 0){
-      historyListEl.innerHTML = '<div class="empty">还没有查询记录。搜索过的关键词会出现在这里。</div>';
+      historyListEl.innerHTML = '<div class="empty">还没有查询记录。</div>';
       clearBtn.style.visibility = "hidden";
       return;
     }
     clearBtn.style.visibility = "visible";
-    var html = '';
+    var html = "";
     history.forEach(function(h){
-      var d = new Date(h.time);
-      var pad = function(n){ return (n<10?"0":"")+n; };
-      var ts = d.getFullYear() + "-" + pad(d.getMonth()+1) + "-" + pad(d.getDate()) + " " + pad(d.getHours()) + ":" + pad(d.getMinutes());
-      html +=
-        '<div class="history-item">' +
-          '<div class="history-kw" data-act="resubmit" data-kw="' + esc(h.kw) + '" title="再次搜索「' + esc(h.kw) + '」">' + esc(h.kw) + '</div>' +
-          '<div class="history-meta">' + ts + ' · 命中 ' + (h.hits !== undefined ? h.hits : "?") + '/' + h.count + '</div>' +
-          '<button class="icon-btn" type="button" data-act="delhist" data-id="' + h.id + '" title="删除该记录">' + iconTrash() + '</button>' +
-        '</div>';
+      var timeStr = new Date(h.time).toLocaleString();
+      html += '<div class="history-item">' +
+        '<div class="history-kw" data-act="resubmit" data-kw="' + esc(h.kw) + '" title="再次搜索「' + esc(h.kw) + '」">' + esc(h.kw) + '</div>' +
+        '<div class="history-meta">' + timeStr + ' · 命中 ' + h.hits + '/' + h.count + '</div>' +
+        '<button class="icon-btn" type="button" data-act="delhist" data-id="' + h.id + '" title="删除">' + iconTrash() + '</button>' +
+      '</div>';
     });
     historyListEl.innerHTML = html;
   }
 
-  function showHistory(){
-    renderHistory();
-    historyDropdown.classList.add("show");
-  }
-  function hideHistory(){
-    historyDropdown.classList.remove("show");
+  function esc(str){
+    return String(str || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
-  function esc(s){
-    return String(s).replace(/[&<>"']/g, function(c){
-      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
-    });
-  }
-
-  /* ---------- Toast ---------- */
-  var toastTimer = null;
   function showToast(msg){
     var t = $("toast");
     t.textContent = msg;
     t.classList.add("show");
-    if(toastTimer) clearTimeout(toastTimer);
-    toastTimer = setTimeout(function(){ t.classList.remove("show"); }, 2200);
+    setTimeout(function(){ t.classList.remove("show"); }, 2200);
   }
 
-  /* ---------- 添加商店弹窗 ---------- */
-  function openModal(){
-    $("fName").value = ""; $("fUrl").value = ""; $("fNoResult").value = ""; $("fNote").value = "";
-    $("errName").classList.remove("show");
-    $("errUrl").classList.remove("show");
-    $("modalMask").classList.add("open");
-    setTimeout(function(){ $("fName").focus(); }, 50);
-  }
-  function closeModal(){ $("modalMask").classList.remove("open"); }
-  function saveStore(){
-    var name = $("fName").value.trim();
-    var url = $("fUrl").value.trim();
-    var noResult = $("fNoResult").value.trim();
-    var note = $("fNote").value.trim();
-    var okName = name.length > 0;
-    var okUrl = validTemplate(url);
-    $("errName").classList.toggle("show", !okName);
-    $("errUrl").classList.toggle("show", !okUrl);
-    if(!okName || !okUrl) return;
-    stores.push({id:uid(), name:name, url:url, note:note, noResultWords:noResult, preset:false, enabled:true});
-    save(STORES_KEY, stores);
-    renderStores();
-    closeModal();
-    showToast("已添加「" + name + "」");
-  }
-
-  /* ---------- 事件绑定 ---------- */
+  /* 绑定事件监听 */
   $("btnSearch").addEventListener("click", function(){ doSearch(kwInput.value); });
   kwInput.addEventListener("keydown", function(e){
-    if(e.key === "Enter"){ e.preventDefault(); doSearch(kwInput.value); }
+    if(e.key === "Enter"){ historyDropdown.classList.remove("show"); doSearch(kwInput.value); }
   });
-  $("btnAdd").addEventListener("click", openModal);
-  $("btnSave").addEventListener("click", saveStore);
-  $("btnCancel").addEventListener("click", closeModal);
-  $("modalMask").addEventListener("click", function(e){ if(e.target === this) closeModal(); });
-  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+  kwInput.addEventListener("focus", function(){ historyDropdown.classList.add("show"); });
+  document.addEventListener("click", function(e){
+    if(!e.target.closest(".search-input-wrap")) historyDropdown.classList.remove("show");
+  });
 
   $("btnClearHistory").addEventListener("click", function(){
-    if(!history.length) return;
     history = [];
     save(HISTORY_KEY, history);
     renderHistory();
-    showToast("已清空查询历史");
-  });
-  $("storeToggle").addEventListener("click", function(){
-    var panel = $("storePanel");
-    var collapsed = panel.classList.toggle("store-collapsed");
-    this.textContent = collapsed ? "展开" : "收起";
-  });
-
-  resultsEl.addEventListener("click", function(e){
-    var btn = e.target.closest(".g-toggle");
-    if(!btn) return;
-    var group = btn.closest(".group");
-    if(!group) return;
-    var collapsed = group.classList.toggle("g-collapsed");
-    btn.textContent = collapsed ? "展开" : "收起";
-  });
-
-  storeListEl.addEventListener("click", function(e){
-    var btn = e.target.closest("[data-act]");
-    if(!btn) return;
-    var id = btn.getAttribute("data-id");
-    var s = stores.filter(function(x){ return x.id === id; })[0];
-    if(!s) return;
-    if(btn.getAttribute("data-act") === "remove"){
-      if(!confirm("确定删除「" + s.name + "」？")) return;
-      stores = stores.filter(function(x){ return x.id !== id; });
-      save(STORES_KEY, stores);
-      renderStores();
-      showToast("已删除「" + s.name + "」");
-    }
-  });
-  storeListEl.addEventListener("change", function(e){
-    var input = e.target.closest("[data-act=toggle]");
-    if(!input) return;
-    var id = input.getAttribute("data-id");
-    stores.forEach(function(s){
-      if(s.id === id) s.enabled = input.checked;
-    });
-    save(STORES_KEY, stores);
-    renderStores();
   });
 
   historyListEl.addEventListener("click", function(e){
-    var el = e.target.closest("[data-act]");
-    if(!el) return;
-    if(el.getAttribute("data-act") === "resubmit"){
-      var kw = el.getAttribute("data-kw");
+    var kwEl = e.target.closest("[data-act=resubmit]");
+    if(kwEl){
+      var kw = kwEl.getAttribute("data-kw");
       kwInput.value = kw;
-      hideHistory();
+      historyDropdown.classList.remove("show");
       doSearch(kw);
-      kwInput.focus();
-    } else if(el.getAttribute("data-act") === "delhist"){
-      var id = el.getAttribute("data-id");
+      return;
+    }
+    var delEl = e.target.closest("[data-act=delhist]");
+    if(delEl){
+      var id = delEl.getAttribute("data-id");
       history = history.filter(function(h){ return h.id !== id; });
       save(HISTORY_KEY, history);
       renderHistory();
     }
   });
 
-  kwInput.addEventListener("focus", showHistory);
-  kwInput.addEventListener("input", showHistory);
-  kwInput.addEventListener("blur", function(){
-    setTimeout(function(){
-      if(!historyDropdown.matches(":hover")) hideHistory();
-    }, 120);
-  });
-  historyDropdown.addEventListener("mousedown", function(e){
-    e.preventDefault();
-  });
-
-
-  /* ---------- 实时汇率 ---------- */
-  var FX_API = "https://open.er-api.com/v6/latest/";
-  var fxRates = {};
-  var fxUpdatedAt = 0;
-
-  function fxEl(id){ return document.getElementById(id); }
-
-  function fxFormat(n){
-    if(!isFinite(n)) return "—";
-    if(n >= 1000) return n.toLocaleString("zh-CN",{maximumFractionDigits:2});
-    if(n >= 1) return n.toLocaleString("zh-CN",{maximumFractionDigits:2});
-    return n.toLocaleString("zh-CN",{maximumFractionDigits:4});
-  }
-
-  function fxRender(){
-    var rawAmount = fxEl("fxAmount").value.trim();
-    var amount = rawAmount === "" ? NaN : Number(rawAmount);
-    var from = fxEl("fxFrom").value;
-    var to = fxEl("fxTo").value;
-    var result = fxEl("fxResult");
-    var output = fxEl("fxOutput");
-    if(!isFinite(amount) || amount < 0){
-      output.value = "—";
-      result.textContent = "请输入有效金额";
-      return;
+  /* 结果展开/收起切换 */
+  resultsEl.addEventListener("click", function(e){
+    var toggleBtn = e.target.closest(".g-toggle");
+    if(toggleBtn){
+      var group = toggleBtn.closest(".group");
+      if(group){
+        group.classList.toggle("g-collapsed");
+        toggleBtn.textContent = group.classList.contains("g-collapsed") ? "展开" : "收起";
+      }
     }
-    var rate;
-    if(from === to) rate = 1;
-    else if(fxRates[from] && fxRates[from][to]) rate = fxRates[from][to];
-    if(!rate){
-      output.value = "—";
-      result.textContent = amount + " " + from + " ≈ — " + to;
-      return;
+  });
+
+  /* 商店管理折叠/展开 */
+  $("storeToggle").addEventListener("click", function(){
+    var p = $("storePanel");
+    p.classList.toggle("store-collapsed");
+    $("storeToggle").textContent = p.classList.contains("store-collapsed") ? "展开" : "收起";
+  });
+
+  storeListEl.addEventListener("change", function(e){
+    var tg = e.target.closest("[data-act=toggle]");
+    if(tg){
+      var id = tg.getAttribute("data-id");
+      var st = stores.find(function(s){ return s.id === id; });
+      if(st){ st.enabled = tg.checked; save(STORES_KEY, stores); }
     }
-    var converted = amount * rate;
-    output.value = fxFormat(converted);
-    result.textContent = fxFormat(amount) + " " + from + " ≈ " + fxFormat(converted) + " " + to;
-    fxEl("fxRate").textContent = "1 " + from + " = " + fxFormat(rate) + " " + to + (fxUpdatedAt ? " · 已更新" : "");
-  }
-
-  function fxSetLoading(loading){
-    fxEl("fxRate").classList.toggle("fx-loading", loading);
-    if(loading) fxEl("fxRate").textContent = "正在获取最新汇率…";
-  }
-
-  function fxFetch(base){
-    fxSetLoading(true);
-    return fetch(FX_API + encodeURIComponent(base), {cache:"no-store"})
-      .then(function(r){
-        if(!r.ok) throw new Error("汇率接口请求失败");
-        return r.json();
-      })
-      .then(function(data){
-        if(!data || data.result !== "success" || !data.rates) throw new Error("汇率数据无效");
-        fxRates[base] = data.rates;
-        fxUpdatedAt = Date.now();
-        fxSetLoading(false);
-        fxRender();
-      })
-      .catch(function(){
-        fxSetLoading(false);
-        fxEl("fxRate").textContent = "暂时无法获取汇率 · 点击“刷新”重试";
-        fxRender();
-      });
-  }
-
-  function fxEnsureRates(){
-    var from = fxEl("fxFrom").value;
-    var to = fxEl("fxTo").value;
-    if(from === to){ fxRender(); return; }
-    if(fxRates[from] && fxRates[from][to]){ fxRender(); return; }
-    fxFetch(from);
-  }
-
-  fxEl("fxAmount").addEventListener("input", fxRender);
-  fxEl("fxAmount").addEventListener("keydown", function(e){
-    if(e.key === "e" || e.key === "E" || e.key === "+" || e.key === "-"){ e.preventDefault(); }
-  });
-  fxEl("fxFrom").addEventListener("change", fxEnsureRates);
-  fxEl("fxTo").addEventListener("change", fxEnsureRates);
-  fxEl("fxSwap").addEventListener("click", function(){
-    var from = fxEl("fxFrom").value;
-    fxEl("fxFrom").value = fxEl("fxTo").value;
-    fxEl("fxTo").value = from;
-    fxEnsureRates();
-  });
-  fxEl("fxRefresh").addEventListener("click", function(){
-    var btn = this;
-    btn.disabled = true;
-    var from = fxEl("fxFrom").value;
-    fxFetch(from).finally(function(){
-      btn.disabled = false;
-    });
   });
 
-  /* ---------- 初始渲染 ---------- */
+  storeListEl.addEventListener("click", function(e){
+    var rm = e.target.closest("[data-act=remove]");
+    if(rm){
+      var id = rm.getAttribute("data-id");
+      stores = stores.filter(function(s){ return s.id !== id; });
+      save(STORES_KEY, stores);
+      renderStores();
+      showToast("已删除商店");
+    }
+  });
+
+  /* 添加商店弹窗逻辑 */
+  var modalMask = $("modalMask");
+  $("btnAdd").addEventListener("click", function(){
+    modalMask.classList.add("open");
+    $("fName").value = "";
+    $("fUrl").value = "";
+    $("fNoResult").value = "";
+    $("fNote").value = "";
+    $("errName").classList.remove("show");
+    $("errUrl").classList.remove("show");
+    $("fName").focus();
+  });
+  $("btnCancel").addEventListener("click", function(){ modalMask.classList.remove("open"); });
+  $("btnSave").addEventListener("click", function(){
+    var name = $("fName").value.trim();
+    var url = $("fUrl").value.trim();
+    var noRes = $("fNoResult").value.trim();
+    var note = $("fNote").value.trim();
+    var ok = true;
+    if(!name){ $("errName").classList.add("show"); ok = false; } else { $("errName").classList.remove("show"); }
+    if(!validTemplate(url)){ $("errUrl").classList.add("show"); ok = false; } else { $("errUrl").classList.remove("show"); }
+    if(!ok) return;
+
+    var newStore = {id: uid(), name: name, url: url, note: note, preset: false, enabled: true, noResultWords: noRes};
+    stores.push(newStore);
+    save(STORES_KEY, stores);
+    renderStores();
+    modalMask.classList.remove("open");
+    showToast("已添加「" + name + "」");
+  });
+
+  /* 实时汇率计算逻辑 */
+  var RATES = { HKD: 1, CNY: 0.8559, USD: 0.1282 };
+  function updateFx(){
+    var amt = parseFloat($("fxAmount").value);
+    if(isNaN(amt) || amt < 0) amt = 0;
+    var from = $("fxFrom").value;
+    var to = $("fxTo").value;
+    var valInHkd = amt / RATES[from];
+    var finalVal = valInHkd * RATES[to];
+    $("fxOutput.value", finalVal.toFixed(2));
+    $("fxOutput").value = finalVal.toFixed(2);
+    $("fxResult").textContent = amt + " " + from + " ≈ " + finalVal.toFixed(2) + " " + to;
+  }
+  $("fxAmount").addEventListener("input", updateFx);
+  $("fxFrom").addEventListener("change", updateFx);
+  $("fxTo").addEventListener("change", updateFx);
+  $("fxSwap").addEventListener("click", function(){
+    var tmp = $("fxFrom").value;
+    $("fxFrom").value = $("fxTo").value;
+    $("fxTo").value = tmp;
+    updateFx();
+  });
+  $("fxRefresh").addEventListener("click", function(){
+    showToast("汇率已更新");
+    updateFx();
+  });
+
   renderStores();
   renderHistory();
-  fxFetch("HKD");
-  resultsEl.innerHTML = '<div class="empty"><div class="empty-title">输入关键词开始搜索</div>自动访问各商店搜索页判断是否匹配：匹配的优先显示，未找到的自动过滤收起。</div>';
+  updateFx();
 })();
 </script>
-
-
-</body></html>
+</body>
+</html>
